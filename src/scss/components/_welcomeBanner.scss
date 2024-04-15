@@ -1,0 +1,46 @@
+.welcome-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .welcome-banner {
+        position: relative;
+        display: inline-block; // Ensures the div wraps around the image
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+
+            .banner-title {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .welcome-message {
+                font-size: 1.5rem;
+            }
+        }
+        .banner-image{
+            height: 60dvh;
+        }
+    }
+
+    .contact-button{
+        background-color: #f8f9fa;
+        color: black;
+        border: 1px solid black;
+        padding: 0.5rem 0.75rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+        margin: 2rem auto 0;
+        text-align: center;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+}
