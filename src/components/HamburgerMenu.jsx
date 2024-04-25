@@ -1,17 +1,31 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import NavMenu from './NavMenu';
 
 function HamburgerMenu() {
-const [navOpen, setNavOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
 
   function showHideNav(isOpen) {
     setNavOpen(isOpen);
   }
-  
-return (
-  <div className={navOpen ? 'show' : undefined}>
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (!event.target.closest('.hamburger-btn') && !event.target.closest('.nav-menu')) {
+        setNavOpen(false);
+      }
+    }
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div className={navOpen ? 'show' : undefined}>
       <button
-        className="hamburger-btn fixed bottom-2 right-4 z-[9999]"
+        className="hamburger-btn"
         onMouseDown={(e) => {
           e.preventDefault();
         }}
@@ -27,8 +41,8 @@ return (
         <span className="sr-only">Menu</span>
       </button>
       <NavMenu showHideNav={showHideNav} navOpen={navOpen} />
-  </div>
-);
+    </div>
+  );
 }
 
 export default HamburgerMenu;
