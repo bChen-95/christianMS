@@ -142,6 +142,20 @@ nav ul li a:hover {
   color: white;
 }
 
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+.infoGrid h2 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.infoGrid p {
+  margin: 0 1.5rem;
+}
+
 h1,
 h2,
 h3,
