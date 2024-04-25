@@ -23,7 +23,7 @@ function HamburgerMenu() {
   }, []);
 
   return (
-    <div className={navOpen ? 'show' : undefined}>
+    <div className={`mobileTopBar ${navOpen ? 'show' : undefined}`}>
       <button
         className="hamburger-btn"
         onMouseDown={(e) => {

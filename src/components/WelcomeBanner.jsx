@@ -7,7 +7,7 @@ function WelcomeBanner(){
             <div className="welcome-banner">
                 <img src={tempPic} alt="Welcome Banner"className="banner-image" />
                 <div className="banner-content">
-                    <h1 className="banner-title">Welcome to our website!</h1>
+                    <h1 className="banner-title">Welcome to my website!</h1>
                     <p className="banner-message">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
                 </div>
             </div>
