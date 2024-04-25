@@ -128,8 +128,9 @@ nav ul li a:hover {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.welcome-wrapper .welcome-banner .banner-content .welcome-message {
-  font-size: 1.5rem;
+.welcome-wrapper .welcome-banner .banner-content .banner-message {
+  min-width: 16rem;
+  text-align: left;
 }
 .welcome-wrapper .welcome-banner .banner-image {
   height: 60dvh;
