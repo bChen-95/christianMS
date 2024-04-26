@@ -5,6 +5,7 @@
     .welcome-banner {
         position: relative;
         display: inline-block; // Ensures the div wraps around the image
+
         .banner-content {
             position: absolute;
             top: 50%;
@@ -14,7 +15,7 @@
             color: white;
             .banner-title {
                 font-size: 2rem;
-                margin-bottom: 1rem;
+                margin: 1rem 0;
             }
             .banner-message {
                 // font-size: 1.5rem;
@@ -23,7 +24,9 @@
             }
         }
         .banner-image{
-            height: 60dvh;
+            margin-top: 3rem;
+            max-height: 60dvh;
+            width: 100%;
         }
 }
 

@@ -126,14 +126,16 @@ nav ul li a:hover {
 }
 .welcome-wrapper .welcome-banner .banner-content .banner-title {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 .welcome-wrapper .welcome-banner .banner-content .banner-message {
   min-width: 16rem;
   text-align: left;
 }
 .welcome-wrapper .welcome-banner .banner-image {
-  height: 60dvh;
+  margin-top: 3rem;
+  max-height: 60dvh;
+  width: 100%;
 }
 .welcome-wrapper .contact-button {
   background-color: #f8f9fa;
