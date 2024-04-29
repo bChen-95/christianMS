@@ -1,20 +1,7 @@
-// import { useState, useEffect } from 'react';
 import tempPic from '../assets/tempPic.png';
 
 function About() {
-    // const [scrollOffset, setScrollOffset] = useState(0);
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         setScrollOffset(window.pageYOffset);
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
 
     return (
         <div className="about-wrapper">
