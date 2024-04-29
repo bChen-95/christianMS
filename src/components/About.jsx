@@ -5,14 +5,14 @@ function About() {
 
     return (
         <div className="about-wrapper">
-            <div className="about-banner">
+            <div className="banner-wrapper">
                 <img src={tempPic} alt="About Banner" className="banner-image parallax-effect" />
                 <div className="banner-content">
                     <h1 className="banner-title">About</h1>
                     <p className="banner-message">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
                 </div>
             </div>
-            <a href="/contact" className="contact-button">Contact</a>
+            {/* <a href="/contact" className="contact-button">Contact</a> */}
         </div>
     );
 }

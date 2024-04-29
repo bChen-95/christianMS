@@ -4,7 +4,7 @@ function WelcomeBanner(){
 
     return (
         <div className="welcome-wrapper">
-            <div className="welcome-banner">
+            <div className="banner-wrapper">
                 <img src={tempPic} alt="Welcome Banner"className="banner-image" />
                 <div className="banner-content">
                     <h1 className="banner-title">Welcome to my website!</h1>
