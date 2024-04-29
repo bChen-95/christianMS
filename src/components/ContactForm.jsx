@@ -40,7 +40,8 @@ export default function ContactForm() {
 
   return (
     <div>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit}
+      className="contactForm">
         <input
           type="hidden"
           name="access_key"
@@ -64,6 +65,12 @@ export default function ContactForm() {
           name="message"
           required
         />
+        <input 
+          type="checkbox" 
+          name="botcheck" 
+          className="hidden" 
+          style="display: none;">
+        </input>
         <button type="submit">
           Submit Form
         </button>
