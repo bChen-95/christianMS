@@ -61,9 +61,12 @@ p {
   border: none;
   background: none;
   position: fixed;
-  z-index: 9998;
-  margin-top: 9px;
+  z-index: 99999;
   left: 0;
+  padding: 0.5rem 1rem;
+  margin-top: 3px;
+  min-height: 45px;
+  min-width: 60px;
 }
 
 .hamburger-icon .line {
@@ -72,8 +75,20 @@ p {
   margin: 5px auto;
   background-color: black;
   display: block;
-  transition: all 0.5s ease-in-out;
   border-radius: 5px;
+}
+.hamburger-icon .line.show:nth-child(1) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 1rem;
+}
+.hamburger-icon .line.show:nth-child(2) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1rem;
+}
+.hamburger-icon .line.show:nth-child(3) {
+  display: none;
 }
 
 nav {
