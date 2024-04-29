@@ -69,7 +69,8 @@ export default function ContactForm() {
           type="checkbox" 
           name="botcheck" 
           className="hidden" 
-          style="display: none;">
+          style=
+          {{display: "none"}}>
         </input>
         <button type="submit">
           Submit Form
