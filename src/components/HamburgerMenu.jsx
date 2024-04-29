@@ -26,6 +26,7 @@ function HamburgerMenu() {
     <div className={`mobileTopBar ${navOpen ? 'show' : undefined}`}>
       <button
         className="hamburger-btn"
+        id='hamburger-btn'
         onMouseDown={(e) => {
           e.preventDefault();
         }}
