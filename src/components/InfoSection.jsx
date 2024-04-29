@@ -13,6 +13,7 @@ function InfoSection() {
                 ))}
             </div>
 
+            {/* might delete this.. */}
             <div className="cta">
                 <h2>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="/contact">Nullam</a>

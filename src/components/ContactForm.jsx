@@ -39,44 +39,51 @@ export default function ContactForm() {
   };
 
   return (
-    <div>
-      <form onSubmit={onSubmit}
-      className="contactForm">
-        <input
-          type="hidden"
-          name="access_key"
-          value={accessKey}
-        />
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={name}
-          onChange={handleNameChange}
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="E-mail"
-          required
-        />
-        <textarea
-          name="message"
-          required
-        />
-        <input 
-          type="checkbox" 
-          name="botcheck" 
-          className="hidden" 
-          style=
-          {{display: "none"}}>
-        </input>
-        <button type="submit">
-          Submit Form
-        </button>
-      </form>
-      <span>{result}</span>
+    <div className="contact-section">
+      <h2>Contact Us</h2>
+      <p>
+        Please fill out the form below and we will get back to you as soon as possible.
+      </p>
+      <div className="contact-form-wrapper">
+        <form onSubmit={onSubmit}
+        className="contactForm">
+          <input
+            type="hidden"
+            name="access_key"
+            value={accessKey}
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={name}
+            onChange={handleNameChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Add your message here."
+            required
+          />
+          <input 
+            type="checkbox" 
+            name="botcheck" 
+            className="hidden" 
+            style=
+            {{display: "none"}}>
+          </input>
+          <button type="submit">
+            Submit Form
+          </button>
+        </form>
+        <span>{result}</span>
+      </div>
     </div>
   );
 }
