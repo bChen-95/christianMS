@@ -56,14 +56,17 @@ p {
   width: 100%;
   height: 3rem;
 }
-.mobileTopBar .hamburger-btn {
+
+.hamburger-btn {
   border: none;
   background: none;
   position: fixed;
   z-index: 9998;
   margin-top: 9px;
+  left: 0;
 }
-.mobileTopBar .hamburger-btn .hamburger-icon .line {
+
+.hamburger-icon .line {
   width: 30px;
   height: 3px;
   margin: 5px auto;
@@ -107,6 +110,11 @@ nav ul li a:hover {
   color: blue;
 }
 
+@media only screen and (min-width: 768px) {
+  .hamburger-btn {
+    display: none !important;
+  }
+}
 .welcome-wrapper {
   display: flex;
   flex-direction: column;
