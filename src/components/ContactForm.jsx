@@ -79,7 +79,7 @@ export default function ContactForm() {
             {{display: "none"}}>
           </input>
           <button type="submit">
-            Submit Form
+            Submit
           </button>
         </form>
         <span>{result}</span>
