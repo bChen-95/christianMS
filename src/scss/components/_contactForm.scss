@@ -1,23 +1,24 @@
 .contact-section{
     margin: 2rem 1rem;
     .contact-form-wrapper{
-        width: 262px;
+        width: 16.5rem;
         margin: 2rem auto;
         .contactForm{
             display: flex;
             flex-direction: column;
 
             input {
-                width: 250px;
+                width: auto;
                 margin: 1rem;
             }
             textarea{
-                width: 250px;
+                width: auto;
                 margin: 1rem;
+                resize: none;
             }
             button{
                 width: 6rem;
-                margin: 1rem 0 1rem auto;
+                margin: 1rem 1rem 1rem auto;
             }
         }
     }
