@@ -158,6 +158,7 @@ nav ul li a:hover {
 }
 .banner-wrapper .banner-image {
   margin-top: 3rem;
+  min-height: 40dvh;
   max-height: 60dvh;
   width: 100vw;
 }
