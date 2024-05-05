@@ -220,10 +220,11 @@ nav ul li a:hover {
 }
 
 .contact-section {
-  margin: 2rem 1rem;
+  margin: 2rem auto;
+  max-width: 650px;
 }
 .contact-section .contact-form-wrapper {
-  width: 16.5rem;
+  max-width: 20rem;
   margin: 2rem auto;
 }
 .contact-section .contact-form-wrapper .contactForm {
@@ -236,6 +237,7 @@ nav ul li a:hover {
 }
 .contact-section .contact-form-wrapper .contactForm textarea {
   width: auto;
+  height: 8rem;
   margin: 1rem;
   resize: none;
 }

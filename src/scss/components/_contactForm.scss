@@ -1,7 +1,8 @@
 .contact-section{
-    margin: 2rem 1rem;
+    margin: 2rem auto;
+    max-width: 650px;
     .contact-form-wrapper{
-        width: 16.5rem;
+        max-width: 20rem;
         margin: 2rem auto;
         .contactForm{
             display: flex;
@@ -13,6 +14,7 @@
             }
             textarea{
                 width: auto;
+                height: 8rem;
                 margin: 1rem;
                 resize: none;
             }
