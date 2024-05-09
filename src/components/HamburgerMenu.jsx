@@ -35,9 +35,9 @@ function HamburgerMenu() {
         }}
       >
         <span className="hamburger-icon">
-          <span className={`line ${navOpen ? 'show' : undefined} `}></span>
-          <span className={`line ${navOpen ? 'show' : undefined} `}></span>
-          <span className={`line ${navOpen ? 'show' : undefined} `}></span>
+          {[...Array(3)].map((_, index) => (
+              <span key={index} className={`line ${navOpen ? 'show' : ''}`}></span>
+          ))}
         </span>
         <span className="sr-only">Menu</span>
       </button>
