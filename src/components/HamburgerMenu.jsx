@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import NavMenu from './NavMenu';
 
 function HamburgerMenu() {
@@ -8,19 +8,6 @@ function HamburgerMenu() {
     setNavOpen(isOpen);
   }
 
-  // useEffect(() => {
-  //   function handleClickOutside(event) {
-  //     if (!event.target.closest('.hamburger-btn') && !event.target.closest('.nav-menu')) {
-  //       setNavOpen(false);
-  //     }
-  //   }
-
-  //   document.addEventListener('click', handleClickOutside);
-
-  //   return () => {
-  //     document.removeEventListener('click', handleClickOutside);
-  //   };
-  // }, []);
 
   return (
     <div className={`mobileTopBar ${navOpen ? 'show' : undefined}`}>
