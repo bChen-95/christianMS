@@ -2,7 +2,10 @@
 function Footer() {
     return (
         <footer>
-            <p>&copy; Brice Chen 2024.</p>
+            <p>
+                <a href="https://bricechen.ca">&copy; Brice Chen 2024</a>
+            </p>
+
         </footer>
     );
 }
