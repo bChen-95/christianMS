@@ -220,7 +220,7 @@ nav ul li a:hover {
 }
 
 .contact-section {
-  margin: 2rem auto;
+  margin: 2rem 1rem;
   max-width: 650px;
 }
 .contact-section .contact-form-wrapper {
@@ -246,6 +246,11 @@ nav ul li a:hover {
   margin: 1rem 1rem 1rem auto;
 }
 
+@media only screen and (min-width: 675px) {
+  .contact-section {
+    margin: 2rem auto;
+  }
+}
 h1,
 h2,
 h3,
