@@ -251,6 +251,11 @@ nav ul li a:hover {
     margin: 2rem auto;
   }
 }
+footer {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
 h1,
 h2,
 h3,
