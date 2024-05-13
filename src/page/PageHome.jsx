@@ -1,16 +1,16 @@
 import WelcomeBanner from "../components/WelcomeBanner";
 import InfoSection from "../components/InfoSection";
-import About from "../components/About";
+import AboutSection from "../components/AboutSection";
 import ContactForm from "../components/ContactForm";
 
 function PageHome () {
     return (
-        <div>
+        <main>
           <WelcomeBanner/>
           <InfoSection/>
-          <About/>
+          <AboutSection/>
           <ContactForm/>
-        </div>
+        </main>
     )
 }
 
