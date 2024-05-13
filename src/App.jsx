@@ -1,18 +1,16 @@
-import HamburgerMenu from './components/HamburgerMenu.jsx'
-import PageHome from './page/PageHome.jsx'
+// import PageHome from './page/PageHome.jsx'
+// import Header from './components/Header.jsx'
 
-function App() {
-  return (
-      <div>
-        <header>
-          <HamburgerMenu />
-        </header>
-        <main>
-          <PageHome/>  
-        </main>
+// function App() {
+//   return (
+//       <div>
+//         <Header/>
+//         <main>
+//           <PageHome/>  
+//         </main>
          
-      </div>
-  )
-}
+//       </div>
+//   )
+// }
 
-export default App
+// export default App
