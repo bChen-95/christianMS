@@ -5,7 +5,7 @@ function AboutSection() {
 
     if (path === '/about') {
         return (
-            <div>
+            <div className="about-page">
                 <h1>About</h1>
                 <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
             </div>
