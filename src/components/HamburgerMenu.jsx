@@ -10,7 +10,7 @@ function HamburgerMenu() {
 
 
   return (
-    <div className={`mobileTopBar ${navOpen ? 'show' : undefined}`}>
+    <div className={`mobileTopBar ${navOpen ? 'show' : ''}`}>
       <button
         className="hamburger-btn"
         id='hamburger-btn'
