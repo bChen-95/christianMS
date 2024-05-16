@@ -261,8 +261,8 @@ footer {
 }
 
 .about-page {
-  height: 100dvh;
-  margin: 3.5rem 1rem 0;
+  height: calc(100dvh - (4rem + 16.8px));
+  margin: 4rem 1rem 0;
 }
 
 h1,
