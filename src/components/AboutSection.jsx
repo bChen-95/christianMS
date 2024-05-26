@@ -1,4 +1,5 @@
 import tempPic from '../assets/tempPic.png';
+import { HashLink } from 'react-router-hash-link';
 
 function AboutSection() {
     const path = window.location.pathname;
@@ -10,6 +11,10 @@ function AboutSection() {
                 <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
 
                 <img src={tempPic} alt="picture of Christian" className="about-image" />
+
+                 <HashLink smooth to="/#contact">
+                <button className="contact-button">Contact</button>
+            </HashLink>
             </div>
         );
     }
