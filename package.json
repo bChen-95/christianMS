@@ -1,8 +1,9 @@
 {
-  "name": "christianmechanic",
+  "name": "christian-mechanic",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "christian-mechanic",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
