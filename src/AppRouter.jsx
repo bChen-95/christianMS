@@ -14,8 +14,8 @@ return (
     <BrowserRouter>
       <Header />
         <Routes>
-          <Route path="/" exact element={<PageHome/>}  />
-          <Route path="/about" element={<PageAbout />} />
+          <Route path="/christian-mechanic" exact element={<PageHome/>}  />
+          <Route path="christian-mechanic/about" element={<PageAbout />} />
         </Routes>
       <Footer />
     </BrowserRouter>
