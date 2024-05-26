@@ -8,6 +8,8 @@ function AboutSection() {
             <div className="about-page">
                 <h1>About</h1>
                 <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+                <img src={tempPic} alt="picture of Christian" className="about-image" />
             </div>
         );
     }
