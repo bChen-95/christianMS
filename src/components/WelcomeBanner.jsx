@@ -1,4 +1,5 @@
 import tempPic from '../assets/tempPic.png';
+import { HashLink } from 'react-router-hash-link';
 
 function WelcomeBanner(){
 
@@ -11,7 +12,9 @@ function WelcomeBanner(){
                     <p className="banner-message">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
                 </div>
             </div>
-            <a href="/contact" className="contact-button">Contact</a>
+            <HashLink smooth to="/#contact">
+                <button className="contact-button">Contact</button>
+            </HashLink>
         </div>
     );
 }

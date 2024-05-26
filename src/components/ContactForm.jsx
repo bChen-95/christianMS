@@ -39,7 +39,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="contact">
       <h2>Contact Us</h2>
       <p>
         Please fill out the form below and we will get back to you as soon as possible.
