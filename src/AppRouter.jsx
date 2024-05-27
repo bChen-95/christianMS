@@ -5,17 +5,16 @@ import Footer from './components/Footer';
 
 import PageHome from './page/PageHome';
 import PageAbout from './page/PageAbout';
-
-
-
+import PageContact from './page/PageContact';
 
 function AppRouter() {
 return (
     <BrowserRouter>
       <Header />
         <Routes>
-          <Route path="/christian-mechanic" exact element={<PageHome/>}  />
-          <Route path="christian-mechanic/about" element={<PageAbout />} />
+          <Route path="/" exact element={<PageHome/>}  />
+          <Route path="/about" element={<PageAbout />} />
+          <Route path="/contact" element={<PageContact />} />
         </Routes>
       <Footer />
     </BrowserRouter>
