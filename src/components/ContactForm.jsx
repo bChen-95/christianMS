@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ContactForm() {
+function ContactForm() {
   const [result, setResult] = useState("");
   const [name, setName] = useState("");
   const accessKey = "d6f78704-093d-4cdb-93bc-5d1628d51e37";
@@ -58,12 +58,14 @@ export default function ContactForm() {
             placeholder="Name"
             value={name}
             onChange={handleNameChange}
+            autoComplete="on"
             required
           />
           <input
             type="email"
             name="email"
             placeholder="E-mail"
+            autoComplete="on"
             required
           />
           <textarea
@@ -87,3 +89,5 @@ export default function ContactForm() {
     </div>
   );
 }
+
+export default ContactForm;
