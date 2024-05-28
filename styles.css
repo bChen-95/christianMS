@@ -260,9 +260,15 @@ footer {
   left: 0;
 }
 
-.about-page {
+.about-page,
+.contact-section {
   height: calc(100dvh - (4rem + 16.8px));
   margin: 4rem 1rem 0;
+}
+
+.about-page .contact-button {
+  position: relative;
+  right: 0;
 }
 
 h1,

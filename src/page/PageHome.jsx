@@ -1,7 +1,7 @@
 import WelcomeBanner from "../components/WelcomeBanner";
 import InfoSection from "../components/InfoSection";
 import AboutSection from "../components/AboutSection";
-import ContactForm from "../components/ContactForm";
+// import ContactForm from "../components/ContactForm";
 
 function PageHome () {
     return (
@@ -9,7 +9,7 @@ function PageHome () {
           <WelcomeBanner/>
           <InfoSection/>
           <AboutSection/>
-          <ContactForm/>
+          {/* <ContactForm/> */}
         </main>
     )
 }

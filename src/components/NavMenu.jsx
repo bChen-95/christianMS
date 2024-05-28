@@ -1,24 +1,24 @@
-// import { HashLink } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 
-function NavMenu() {
+
+function NavMenu({ showHideNav }) {
+
+  function closeNavMenu(e){
+    if(window.innerWidth < 800) {
+      showHideNav();
+    }else{
+      e.target.blur();
+    }
+  }
+  
   return (
     <nav>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-
-        <li>
-          <a href="/about">About</a>
-        </li>
-
-        {/* <li>
-          <HashLink smooth to="/#contact">
-                <a>Contact</a>
-            </HashLink>
-        </li> */}
-
+      <ul onClick={closeNavMenu}>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/about">About</NavLink></li>
+        <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
     </nav>
   );

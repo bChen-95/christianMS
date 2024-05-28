@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'christian-mechanic' 
   },
-  base: '/christian-mechanic/'
+  // base: '/christian-mechanic/'
 })

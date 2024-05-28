@@ -1,6 +1,15 @@
 @use '../base/variables' as *;
 
-.about-page{
+.about-page,
+.contact-section{
     height: calc(100dvh - $aboutMargin);
     margin: 4rem 1rem 0;
 }
+
+.about-page{
+    .contact-button{
+        position: relative;
+        right: 0;
+    }
+}
+

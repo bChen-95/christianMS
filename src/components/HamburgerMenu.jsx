@@ -4,10 +4,9 @@ import NavMenu from './NavMenu';
 function HamburgerMenu() {
   const [navOpen, setNavOpen] = useState(false);
 
-  function showHideNav(isOpen) {
-    setNavOpen(isOpen);
+  function showHideNav() {
+    setNavOpen(!navOpen);
   }
-
 
   return (
     <div className={`mobileTopBar ${navOpen ? 'show' : ''}`}>
@@ -28,7 +27,7 @@ function HamburgerMenu() {
         </span>
         <span className="sr-only">Menu</span>
       </button>
-      <NavMenu showHideNav={showHideNav} navOpen={navOpen} />
+      <NavMenu showHideNav={showHideNav} />
     </div>
   );
 }

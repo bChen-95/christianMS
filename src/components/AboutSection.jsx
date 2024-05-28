@@ -1,10 +1,11 @@
 import tempPic from '../assets/tempPic.png';
-import { HashLink } from 'react-router-hash-link';
+// import { HashLink } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
 
 function AboutSection() {
     const path = window.location.pathname;
 
-    if (path === '/about') {
+    if (path.startsWith('/about')) {
         return (
             <div className="about-page">
                 <h1>About</h1>
@@ -12,9 +13,9 @@ function AboutSection() {
 
                 <img src={tempPic} alt="picture of Christian" className="about-image" />
 
-                 <HashLink smooth to="/#contact">
-                <button className="contact-button">Contact</button>
-            </HashLink>
+                 <NavLink to ="/contact">
+                    <button className="contact-button">Contact</button>
+                </NavLink>
             </div>
         );
     }
