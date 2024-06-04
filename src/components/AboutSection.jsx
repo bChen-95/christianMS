@@ -1,4 +1,4 @@
-import tempPic from '../assets/tempPic.png';
+import tempPic from '../../public/tempPic.png';
 // import { HashLink } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 

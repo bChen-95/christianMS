@@ -81,6 +81,9 @@ nav {
   .hamburger-btn {
       display: none;
   }
+  .mobileTopBar {
+    position: static;
+  }
   nav {
     height: auto;
     visibility: visible;
@@ -94,5 +97,6 @@ nav {
     }
   }
 }
+
 
 
