@@ -1,4 +1,4 @@
-import tempPic from '../../public/tempPic.png';
+import tempPic from "../images/tempPic.png?url";
 import { HashLink } from 'react-router-hash-link';
 
 function WelcomeBanner(){
