@@ -83,6 +83,9 @@ nav {
   }
   .mobileTopBar {
     position: static;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
   }
   nav {
     height: auto;
@@ -91,12 +94,22 @@ nav {
     ul {
       display: flex;
       justify-content: center;
+      margin-top: 0;
+      margin-bottom: 0;
       li {
         margin: 0 1rem;
       }
     }
   }
+  .welcome-wrapper{
+    .banner-wrapper {
+      .banner-image{
+        margin-top: 0;
+      }
+    }
+  }
 }
+
 
 
 
