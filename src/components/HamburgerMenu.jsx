@@ -5,8 +5,11 @@ function HamburgerMenu() {
   const [navOpen, setNavOpen] = useState(false);
 
   function showHideNav() {
-    setNavOpen(!navOpen);
-  }
+    if (window.innerWidth < 768) {
+        setNavOpen(!navOpen);
+    }
+}
+
 
   return (
     <div className={`mobileTopBar ${navOpen ? 'show' : ''}`}>
