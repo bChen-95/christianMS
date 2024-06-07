@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
 html {
   box-sizing: border-box;
-  height: 100dvh;
+  height: 100%;
   scroll-behavior: smooth;
 }
 
@@ -15,6 +15,19 @@ html {
 body {
   margin: 0;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 img {
@@ -265,15 +278,10 @@ nav ul li a:hover {
 footer {
   text-align: center;
   font-size: 0.7rem;
-  position: relative;
-  bottom: 0;
-  right: 0;
-  left: 0;
 }
 
 .about-page,
 .contact-section {
-  height: calc(100dvh - (4rem + 16.8px));
   margin: 4rem 1rem 0;
 }
 
