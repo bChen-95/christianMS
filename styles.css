@@ -28,6 +28,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1;
+  place-content: center;
 }
 
 img {
@@ -272,7 +273,7 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 675px) {
   #contact {
-    margin: 2rem auto;
+    margin: 0 auto;
   }
 }
 footer {
