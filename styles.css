@@ -164,9 +164,6 @@ nav ul li a:hover {
   .welcome-wrapper .banner-wrapper {
     margin-top: 0rem;
   }
-  .welcome-wrapper .banner-wrapper .banner-image {
-    margin-top: 0;
-  }
 }
 .welcome-wrapper {
   display: flex;
