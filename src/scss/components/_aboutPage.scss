@@ -6,13 +6,38 @@
 }
 
 .about-page{
-    .contact-button{
+    .about-page-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            max-width: 250px;
+            height: 375px;
+        }
+        p{
+            margin: 1rem;
+     }
+    }
+    .contactBtn-about{
         position: relative;
+        right: 0;
         float: right;
     }
-    // img{
-    //     max-width: 200px;
-    //     height: 350px;
-    // }
 }
+
+@media only screen and (min-width: 650px) {
+    
+    .about-page{
+        .about-page-content-wrapper{
+            flex-direction: row;
+            place-content: center;
+            img{
+                max-width: 300px;
+                height: 450px;
+            }
+        }
+    }
+}
+    
+
 

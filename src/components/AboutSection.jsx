@@ -9,13 +9,15 @@ function AboutSection() {
         return (
             <div className="about-page">
                 <h1>About</h1>
-                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
 
-                <img src={tempPic} alt="picture of Christian" className="about-image" />
+                    <div className="about-page-content-wrapper">
+                        <img src={tempPic} alt="picture of Christian" className="about-image about-page-image" />
+                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                    </div>
 
-                 <NavLink to ="/contact">
-                    <button className="contact-button">Contact</button>
-                </NavLink>
+                    <NavLink to ="/contact">
+                        <button className="contact-button contactBtn-about">Contact</button>
+                    </NavLink>
             </div>
         );
     }
