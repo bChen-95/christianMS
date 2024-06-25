@@ -134,7 +134,7 @@ nav ul li a {
   padding: 0.5rem 3rem;
 }
 nav ul li a:hover {
-  color: blue;
+  color: rgb(0, 0, 188);
 }
 
 @media only screen and (min-width: 768px) {
@@ -161,6 +161,9 @@ nav ul li a:hover {
   nav ul li {
     margin: 0 1rem;
   }
+  .welcome-wrapper .banner-wrapper {
+    margin-top: 0rem;
+  }
   .welcome-wrapper .banner-wrapper .banner-image {
     margin-top: 0;
   }
@@ -172,6 +175,7 @@ nav ul li a:hover {
 }
 
 .banner-wrapper {
+  margin-top: 3rem;
   position: relative;
   display: inline-block;
 }
@@ -192,7 +196,6 @@ nav ul li a:hover {
   text-align: left;
 }
 .banner-wrapper .banner-image {
-  margin-top: 3rem;
   min-height: 40dvh;
   max-height: 60dvh;
   width: 100vw;

@@ -70,7 +70,7 @@ nav {
         color: black;
         padding: 0.5rem 3rem;
         &:hover {
-          color: blue;
+          color: rgb(0, 0, 188);
         }
       }
     }
@@ -103,6 +103,7 @@ nav {
   }
   .welcome-wrapper{
     .banner-wrapper {
+      margin-top: 0rem;
       .banner-image{
         margin-top: 0;
       }

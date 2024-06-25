@@ -4,6 +4,7 @@
     align-items: center;
 }
     .banner-wrapper {
+        margin-top: 3rem;
         position: relative;
         display: inline-block; // Ensures the div wraps around the image
 
@@ -25,7 +26,6 @@
             }
         }
         .banner-image{
-            margin-top: 3rem;
             min-height: 40dvh;
             max-height: 60dvh;
             width: 100vw;
